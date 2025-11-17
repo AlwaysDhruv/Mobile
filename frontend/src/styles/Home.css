@@ -1,0 +1,181 @@
+/* MAIN PAGE BG */
+.home {
+  background: linear-gradient(145deg, #002a20, #003c2a, #002119);
+  background-size: 300% 300%;
+  animation: bgMove 12s infinite alternate;
+  min-height: 100vh;
+  padding-top: 120px;
+  color: #d9ffe8;
+  text-align: center;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
+
+/* HERO SECTION */
+.hero {
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #b8ffe1;
+  margin: 0;
+}
+
+.hero p {
+  margin-top: 8px;
+  color: #9edbb5;
+  font-size: 18px;
+}
+
+/* HERO BUTTONS */
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.hero-buttons .btn {
+  min-width: 140px;
+  width: auto !important;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: #00b562;
+  color: #003315;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.hero-buttons .btn:hover {
+  background: #00cc6e;
+  transform: translateY(-2px);
+}
+
+/* CONTACT SECTION */
+.contact-container {
+  margin-top: 60px;
+  background: rgba(0, 50, 35, 0.35);
+  padding: 30px;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 255, 160, 0.15);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+}
+
+.contact-container h2 {
+  color: #caffea;
+  margin-bottom: 6px;
+}
+
+.contact-container p {
+  color: #a6e7c5;
+  margin-bottom: 18px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #067a52;
+  background: rgba(0, 40, 28, 0.6);
+  color: #d8ffe6;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9ed5b9;
+}
+
+/* CONTACT FORM BUTTON */
+.contact-form .btn {
+  width: 100%;
+  background: #00b562;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.contact-form .btn:hover {
+  background: #00d174;
+}
+
+.form-status {
+  margin-top: 6px;
+  color: #d8ffe6;
+  min-height: 20px;
+}
+
+/* PRODUCT MODAL */
+.pv-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.pv-box {
+  background: rgba(0,60,45,0.75);
+  border-radius: 16px;
+  padding: 25px;
+  width: 90%;
+  max-width: 800px;
+  border: 1px solid rgba(0,255,160,0.2);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+  position: relative;
+  color: #d8ffe6;
+}
+
+.pv-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #afffda;
+  cursor: pointer;
+}
+
+.pv-content {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.pv-img {
+  width: 260px;
+  height: 260px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.pv-price {
+  font-size: 24px;
+  color: #8bffd1;
+  margin-top: 8px;
+}
+
+.pv-desc {
+  margin-top: 12px;
+  color: #c8ffe6;
+}

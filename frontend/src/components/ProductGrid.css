@@ -1,0 +1,2 @@
+.grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap:18px; }
+.empty { padding:30px; text-align:center; color:#a6e7c5; }

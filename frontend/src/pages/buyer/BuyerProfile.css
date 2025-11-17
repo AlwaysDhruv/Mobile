@@ -1,0 +1,134 @@
+.buyer-profile {
+  padding: 25px;
+  color: #d9ffe8;
+}
+
+.profile-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #a8ffdd;
+}
+
+.profile-card {
+  display: flex;
+  gap: 30px;
+  padding: 25px;
+  background: rgba(0, 40, 30, 0.4);
+  border-radius: 14px;
+  border: 1px solid rgba(0, 255, 160, 0.12);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* Avatar */
+.avatar-box {
+  text-align: center;
+}
+
+.avatar-circle {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #00ff99, #009966);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 46px;
+  color: #003322;
+  margin-bottom: 10px;
+}
+
+.email-text {
+  color: #9effc9;
+  font-size: 15px;
+}
+
+/* Details */
+.profile-info {
+  flex: 1;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.info-row label {
+  color: #aaffdd;
+  font-weight: bold;
+}
+
+.info-row span {
+  color: #d9ffe8;
+}
+
+/* Inputs */
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 70, 50, 0.35);
+  border: 1px solid rgba(0,255,160,0.2);
+  border-radius: 8px;
+  color: #d9ffe8;
+}
+
+.textarea {
+  height: 70px;
+}
+
+/* Buttons */
+.edit-btn,
+.password-btn,
+.save-btn,
+.cancel-btn {
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.edit-btn {
+  background: #00ffaa;
+  color: #003322;
+}
+
+.password-btn {
+  background: #66ccff;
+  color: #003344;
+}
+
+.save-btn {
+  background: #00ff99;
+  color: #003322;
+}
+
+.cancel-btn {
+  background: #ff6666;
+  color: white;
+}
+
+/* Password Box */
+.password-box {
+  margin-top: 20px;
+  background: rgba(0,50,40,0.4);
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,255,150,0.2);
+}
+.delete-account-btn {
+  background: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 160px;
+}
+
+.delete-account-btn:hover {
+  background: #c9302c;
+}

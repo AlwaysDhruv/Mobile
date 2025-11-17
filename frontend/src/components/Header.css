@@ -1,0 +1,126 @@
+.site-header {
+  background: linear-gradient(180deg, rgba(0,24,14,0.7), rgba(0,24,14,0.9));
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+.header-inner { display:flex; align-items:center; justify-content:space-between; padding:12px 20px; }
+.logo { display:flex; gap:10px; align-items:center; cursor:pointer; color:#bff8cc; font-weight:700; }
+.logo-mark { font-size:20px; }
+.nav { display:flex; gap:18px; align-items:center; }
+.nav a { color:#d9ffe8; opacity:0.9; padding:6px 8px; border-radius:6px; }
+.nav a:hover { background: rgba(255,255,255,0.02); }
+.header-actions .btn.small { padding:8px 10px; background:#00b562; color:#00220f; border-radius:8px; text-decoration:none; }
+.store-products {
+  margin-top: 40px;
+  text-align: center;
+  color: #caffea;
+}
+
+.store-select {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #067a52;
+  background: rgba(0,40,28,0.7);
+  color: #d8ffe6;
+  width: 240px;
+}
+
+.action-buttons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: #00b562;
+  color: #003315;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(0, 30, 22, 0.65);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,255,160,0.12);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.35);
+}
+
+.header-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* BRAND LEFT */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.25s;
+}
+
+.header-left:hover {
+  opacity: 0.85;
+}
+
+.brand-icon {
+  font-size: 22px;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #caffea;
+  letter-spacing: .4px;
+}
+
+/* ACTION BUTTONS RIGHT */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-btn {
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  background: rgba(0, 80, 55, 0.4);
+  border: 1px solid rgba(0, 255, 160, 0.2);
+  color: #d9ffe8;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.header-btn:hover {
+  background: rgba(0, 255, 160, 0.25);
+  border-color: rgba(0, 255, 160, 0.45);
+}
+
+.header-btn.highlight {
+  background: #00b562;
+  border-color: #00b562;
+  color: #003315;
+  font-weight: 700;
+}
+
+.header-btn.highlight:hover {
+  filter: brightness(1.2);
+}

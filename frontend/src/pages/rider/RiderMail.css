@@ -1,0 +1,220 @@
+.mail-page {
+  display: flex;
+  color: #d9ffe8;
+  background: rgba(0, 30, 20, 0.3);
+  border-radius: 14px;
+  overflow: hidden;
+  height: 90vh;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* Sidebar */
+.mail-sidebar {
+  width: 220px;
+  background: rgba(0, 50, 35, 0.45);
+  border-right: 1px solid rgba(0, 255, 160, 0.15);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.mail-sidebar button {
+  background: transparent;
+  border: none;
+  color: #aaffdd;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mail-sidebar button.active,
+.mail-sidebar button:hover {
+  color: #00ff99;
+}
+
+.compose-btn {
+  background: linear-gradient(135deg, #00ff88, #00cc88);
+  border-radius: 8px;
+  padding: 10px;
+  color: #003322;
+  margin-bottom: 25px;
+  font-weight: bold;
+  border: none;
+  transition: all 0.25s;
+}
+
+.compose-btn:hover {
+  background: linear-gradient(135deg, #00ffaa, #00ddaa);
+  transform: translateY(-2px);
+}
+
+/* Main Content */
+.mail-content {
+  flex: 1;
+  padding: 25px;
+  overflow-y: auto;
+}
+
+/* Table */
+.mail-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.mail-table th,
+.mail-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(0, 255, 160, 0.15);
+  font-size: 14px;
+}
+
+.mail-table th {
+  text-align: left;
+  color: #aaffdd;
+  background: rgba(0, 255, 160, 0.05);
+}
+
+.mail-table tr:hover {
+  background: rgba(0, 255, 160, 0.05);
+}
+
+/* Compose Modal */
+.compose-box {
+  background: rgba(0, 40, 25, 0.8);
+  border: 1px solid rgba(0, 255, 160, 0.25);
+  border-radius: 12px;
+  padding: 20px;
+  width: 70%;
+  margin: 20px auto;
+  animation: fadeIn 0.3s ease-in;
+  backdrop-filter: blur(6px);
+}
+
+.compose-box h3 {
+  color: #caffea;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Input fields */
+.compose-box select,
+.compose-box input,
+.compose-box textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(0, 255, 160, 0.25);
+  border-radius: 8px;
+  padding: 10px;
+  color: #d9ffe8;
+  margin-bottom: 12px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+/* Fix: dropdown (select) background + hover */
+.compose-box select {
+  appearance: none;
+  cursor: pointer;
+  background-image: linear-gradient(135deg, rgba(0, 255, 160, 0.05), rgba(0, 255, 160, 0.02));
+  color: #caffea;
+}
+
+.compose-box select option {
+  background: #00281e; /* Fix background issue */
+  color: #aaffdd;
+  padding: 10px;
+}
+
+.compose-box select:focus,
+.compose-box input:focus,
+.compose-box textarea:focus {
+  border-color: rgba(0, 255, 160, 0.5);
+  background: rgba(0, 255, 160, 0.05);
+}
+
+/* Textarea */
+.compose-box textarea {
+  resize: none;
+  min-height: 100px;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.compose-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.compose-actions button {
+  background: rgba(0, 255, 160, 0.4);
+  border: none;
+  color: #003322;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.compose-actions button:hover {
+  background: rgba(0, 255, 160, 0.6);
+}
+
+/* Mail list items */
+.mail-card {
+  background: rgba(0, 40, 30, 0.5);
+  border-radius: 10px;
+  padding: 14px 18px;
+  border: 1px solid rgba(0, 255, 160, 0.15);
+  transition: background 0.2s;
+}
+
+.mail-card:hover {
+  background: rgba(0, 255, 160, 0.07);
+}
+
+.mail-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  color: #9edbb5;
+  font-size: 14px;
+}
+
+.mail-subject {
+  font-size: 15px;
+  color: #caffea;
+  margin-bottom: 5px;
+}
+
+.mail-body {
+  font-size: 14px;
+  color: #a6e4c6;
+  line-height: 1.4;
+}
+
+.no-mails {
+  text-align: center;
+  color: #7ebf9d;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

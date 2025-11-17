@@ -1,0 +1,354 @@
+/* ================================
+   STORE PROFILE PAGE
+================================ */
+.store-profile {
+  padding: 25px;
+  color: #d9ffe8;
+}
+
+/* ================================
+   STORE FULL INFO BOX
+================================ */
+.store-info-box {
+  background: rgba(0, 45, 35, 0.45);
+  border-radius: 16px;
+  padding: 22px;
+  border: 1px solid rgba(0,255,160,0.18);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.38);
+  backdrop-filter: blur(6px);
+  margin-bottom: 28px;
+}
+
+/* ================================
+   BANNER
+================================ */
+.store-banner-box {
+  width: 100%;
+  height: 220px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(0,255,160,0.15);
+  background: rgba(0, 45, 35, 0.6);
+}
+
+.store-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================================
+   LOGO SEPARATED BELOW BANNER
+================================ */
+.store-logo-wrapper {
+  width: 140px;
+  height: 140px;
+  margin: -70px auto 20px auto;
+  border-radius: 50%;
+  padding: 5px;
+  background: #003a2a;
+  border: 2px solid rgba(0,255,160,0.45);
+  box-shadow: 0 8px 28px rgba(0,255,160,0.25);
+}
+
+.store-logo-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ================================
+   STORE DETAILS
+================================ */
+.store-details {
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px 4px;
+}
+
+.store-title {
+  font-size: 26px;
+  color: #bff8cc;
+  margin-bottom: 6px;
+}
+
+.store-desc {
+  font-size: 15px;
+  color: #aaffdd;
+  margin-bottom: 18px;
+}
+
+/* STORE STATUS */
+.store-status {
+  margin-bottom: 18px;
+}
+
+.store-status .open {
+  color: #00ff99;
+  font-weight: 700;
+}
+
+.store-status .closed {
+  color: #ff8b8b;
+  font-weight: 700;
+}
+
+/* ================================
+   STORE INFO GRID
+================================ */
+.store-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.info-item {
+  background: rgba(0, 40, 28, 0.45);
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,255,160,0.12);
+  text-align: left;
+}
+
+.info-label {
+  font-size: 13px;
+  color: #9effc9;
+  opacity: 0.85;
+}
+
+.info-value {
+  margin-top: 4px;
+  font-size: 15px;
+  color: #d9ffe8;
+  font-weight: 600;
+}
+
+/* ================================
+   SOCIAL LINKS
+================================ */
+.social-title {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #aaffdd;
+  font-weight: 600;
+  text-align: left;
+}
+
+.social-links {
+  display: flex;
+  gap: 14px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.18s;
+}
+
+.link-active {
+  background: rgba(0,255,160,0.2);
+  border: 1px solid rgba(0,255,160,0.35);
+  color: #d9ffe8;
+}
+
+.link-active:hover {
+  background: rgba(0,255,160,0.32);
+}
+
+.link-disabled {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.4);
+  pointer-events: none;
+}
+
+/* ================================
+   SEARCH BOX
+================================ */
+.search-box {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.search-box input,
+.search-box select {
+  padding: 12px;
+  background: rgba(0, 60, 40, 0.35);
+  border: 1px solid rgba(0,255,160,0.20);
+  border-radius: 10px;
+  color: #d9ffe8;
+  font-size: 15px;
+}
+
+.search-box select {
+  width: 200px;
+}
+
+/* ================================
+   CATEGORY TABS
+================================ */
+.category-tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.category-tabs button {
+  padding: 10px 14px;
+  background: rgba(0, 60, 40, 0.35);
+  border: 1px solid rgba(0,255,160,0.18);
+  border-radius: 10px;
+  color: #d9ffe8;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: 0.2s;
+}
+
+.category-tabs button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,255,160,0.12);
+}
+
+.category-tabs button.active {
+  background: #00ff99;
+  color: #003322;
+  border-color: rgba(0,180,120,0.45);
+}
+
+/* ================================
+   PRODUCT GRID
+================================ */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.product-card {
+  background: rgba(0, 45, 35, 0.35);
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,255,160,0.15);
+  cursor: pointer;
+  transition: 0.25s;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0,255,160,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ================================
+   MODAL - PRODUCT VIEW
+================================ */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.72);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: rgba(0, 45, 35, 0.88);
+  border-radius: 14px;
+  padding: 22px;
+  width: 480px;
+  max-height: 92vh;
+  overflow-y: auto;
+  border: 1px solid rgba(0,255,160,0.20);
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #e9fff3;
+}
+
+/* MODAL IMAGES */
+.modal-img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid rgba(0,255,160,0.12);
+}
+
+.thumb-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.thumb {
+  width: 58px;
+  height: 58px;
+  border-radius: 6px;
+  object-fit: contain;
+  border: 1px solid rgba(0,255,160,0.2);
+  cursor: pointer;
+  transition: 0.18s;
+}
+
+.thumb:hover {
+  transform: scale(1.08);
+}
+
+/* ================================
+   ADD TO CART BUTTON
+================================ */
+.btn {
+  margin-top: 14px;
+  width: 100%;
+  padding: 12px;
+  background: #00ff99;
+  color: #003322;
+  border-radius: 10px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #00e68a;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 650px) {
+  .modal-content {
+    width: 100%;
+  }
+
+  .store-info-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

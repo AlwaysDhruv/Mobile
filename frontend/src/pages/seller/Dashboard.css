@@ -1,0 +1,58 @@
+.seller-dashboard {
+  text-align: center;
+  color: #d9ffe8;
+}
+
+.dash-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #b8ffe1;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 22px;
+  margin-top: 20px;
+}
+
+.stat-card {
+  background: rgba(0,50,35,0.35);
+  padding: 26px;
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0,255,160,0.15);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+  transition: transform .25s, box-shadow .25s;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+}
+
+.stat-card h2 {
+  margin: 0;
+  font-size: 34px;
+  color: #caffea;
+}
+
+.stat-card p {
+  margin-top: 6px;
+  color: #9edbb5;
+  font-size: 15px;
+}
+
+.seller-dashboard {
+  text-align: center;
+  color: #d9f3ff;
+}
+
+.dash-title {
+  color: #b8e9ff;
+}
+
+.stat-card {
+  background: rgba(0, 40, 60, 0.4);
+  border: 1px solid rgba(0, 200, 255, 0.15);
+}

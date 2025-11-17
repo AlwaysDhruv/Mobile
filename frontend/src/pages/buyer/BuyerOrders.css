@@ -1,0 +1,122 @@
+.buyer-orders {
+  color: #d9ffe8;
+  padding: 25px;
+}
+
+.orders-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #b8ffe1;
+}
+
+/* Search + Filter */
+.order-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.order-controls input,
+.order-controls select {
+  padding: 10px;
+  background: rgba(0, 50, 35, 0.4);
+  border: 1px solid rgba(0, 255, 160, 0.2);
+  border-radius: 8px;
+  color: #d9ffe8;
+}
+
+/* TABLE */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid rgba(0,255,160,0.15);
+}
+
+.order-id {
+  font-family: monospace;
+}
+
+/* STATUS CHIP */
+.status-chip {
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: #003322;
+  font-weight: bold;
+}
+
+.status-chip.pending {
+  background: #ffe066;
+}
+
+.status-chip.assigned {
+  background: #66ccff;
+}
+
+.status-chip.picked_up {
+  background: #ffaa66;
+}
+
+.status-chip.delivered {
+  background: #66ff99;
+}
+
+.status-chip.cancelled {
+  background: #ff6666;
+}
+
+/* Buttons */
+.view-btn {
+  padding: 6px 12px;
+  background: #00ffaa;
+  border: none;
+  border-radius: 6px;
+  color: #003322;
+  margin-right: 8px;
+}
+
+.cancel-btn {
+  padding: 6px 12px;
+  background: #ff5555;
+  border: none;
+  border-radius: 6px;
+  color: white;
+}
+
+.reorder-btn {
+  padding: 6px 12px;
+  background: #88ffb5;
+  border: none;
+  border-radius: 6px;
+  color: #003322;
+}
+
+/* Details Row */
+.details-row {
+  background: rgba(0, 40, 30, 0.35);
+}
+
+.order-details {
+  padding: 18px;
+}
+
+.items-box {
+  margin-top: 10px;
+}
+
+.item-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0,255,160,0.1);
+}
+
+.order-total {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #88ffb5;
+}

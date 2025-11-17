@@ -1,0 +1,68 @@
+.add-product {
+  color: #d9ffe8;
+}
+
+.add-product h1 {
+  margin-bottom: 20px;
+  color: #caffea;
+  text-align: center;
+}
+
+.add-form {
+  max-width: 600px;
+  margin: auto;
+  background: rgba(0,40,28,0.45);
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,255,160,0.18);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.add-form input,
+.add-form select,
+.add-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #067a52;
+  background: rgba(0,40,28,0.6);
+  color: #d8ffe6;
+}
+
+.btn {
+  padding: 12px;
+  background: #00b562;
+  color: #003315;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.status {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.category-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.create-cat-btn {
+  padding: 10px 14px;
+  background: rgba(0, 255, 160, 0.25);
+  border: 1px solid rgba(0, 255, 160, 0.45);
+  color: #d9ffe8;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.create-cat-btn:hover {
+  background: rgba(0, 255, 160, 0.45);
+}

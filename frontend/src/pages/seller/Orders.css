@@ -1,0 +1,255 @@
+.orders-container {
+  padding: 20px;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff10;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ffffff22;
+}
+
+.order-row:hover {
+  background: #ffffff08;
+}
+
+.status-chip {
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+/* Status Colors */
+.status-chip.pending { background: #f7b731; }
+.status-chip.assigned { background: #3867d6; }
+.status-chip.picked_up { background: #fa8231; }
+.status-chip.delivered { background: #20bf6b; }
+.status-chip.cancelled { background: #eb3b5a; }
+
+.view-btn,
+.primary-btn,
+.cancel-btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.view-btn { background: #5352ed; color: white; }
+.primary-btn { background: #20bf6b; color: white; }
+.cancel-btn { background: #eb3b5a; color: white; }
+
+.details-row {
+  background: #ffffff0c;
+}
+
+.order-details {
+  padding: 15px;
+}
+
+.items-box {
+  margin-top: 10px;
+  border-top: 1px solid #ffffff22;
+  padding-top: 10px;
+}
+
+.item-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 0;
+}
+
+.order-total {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  .order-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.order-filters input,
+.order-filters select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.inner-items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.inner-items-table th,
+.inner-items-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 6px 8px;
+}
+
+.order-total-box {
+  margin-top: 12px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.order-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.order-filters input,
+.order-filters select {
+  padding: 7px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.order-id {
+  font-family: monospace;
+  font-size: 13px;
+  cursor: pointer;
+  color: #0055cc;
+}
+.order-id:hover {
+  text-decoration: underline;
+}
+
+.rider-col { display: flex; flex-direction: column; line-height: 1.1; }
+.rider-name { font-weight: 600; color: #0055cc; }
+.rider-mail { font-size: 11px; color: #777; }
+.no-rider { color: #b07400; font-weight: 500; }
+
+.inner-items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.inner-items-table th, .inner-items-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-total-box {
+  margin-top: 10px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+}
+
+.rider-col {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.rider-name {
+  font-weight: 600;
+  color: #2c6fbb;
+}
+
+.rider-mail {
+  font-size: 12px;
+  color: #888;
+}
+
+.no-rider {
+  color: #c77f00;
+  font-weight: 500;
+}
+
+.order-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.order-filters input,
+.order-filters select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.inner-items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.inner-items-table th,
+.inner-items-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 6px 8px;
+}
+
+.order-total-box {
+  margin-top: 12px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.order-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.order-filters input,
+.order-filters select {
+  padding: 7px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.order-id {
+  font-family: monospace;
+  font-size: 13px;
+  cursor: pointer;
+  color: #0055cc;
+}
+.order-id:hover {
+  text-decoration: underline;
+}
+
+.rider-col { display: flex; flex-direction: column; line-height: 1.1; }
+.rider-name { font-weight: 600; color: #0055cc; }
+.rider-mail { font-size: 11px; color: #777; }
+.no-rider { color: #b07400; font-weight: 500; }
+
+.inner-items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.inner-items-table th, .inner-items-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-total-box {
+  margin-top: 10px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 16px;
+}

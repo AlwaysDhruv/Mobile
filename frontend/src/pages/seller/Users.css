@@ -1,0 +1,219 @@
+.buyers-container {
+  color: #d9ffe8;
+  text-align: center;
+}
+
+/* Page Title */
+.buyers-container h1 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #b8ffe1;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.search-box select,
+.search-box input {
+  background: rgba(0,45,32,0.3);
+  border: 1px solid rgba(0,255,160,0.2);
+  color: #d9ffe8;
+  padding: 8px 12px;
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+}
+
+.search-box select:focus,
+.search-box input:focus {
+  outline: none;
+  border-color: #00ffb3;
+}
+
+
+/* Buyers Table */
+.buyers-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: rgba(0,45,32,0.25);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(0,255,160,0.15);
+}
+
+.buyers-table th,
+.buyers-table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid rgba(0,255,160,0.12);
+}
+
+.buyers-table th {
+  color: #a8ffd9;
+  font-weight: 600;
+  background: rgba(0,60,45,0.3);
+}
+
+.buyers-table tr:hover {
+  background: rgba(0,80,60,0.3);
+}
+
+/* Buttons */
+.view-btn,
+.send-mail-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #d9ffe8;
+  border: none;
+  transition: .25s;
+}
+
+.view-btn {
+  background: rgba(0,255,160,0.25);
+}
+
+.view-btn:hover {
+  background: rgba(0,255,160,0.45);
+}
+
+.send-mail-btn {
+  background: rgba(0,128,255,0.3);
+  margin-left: 8px;
+}
+
+.send-mail-btn:hover {
+  background: rgba(0,128,255,0.55);
+}
+
+/* Orders Expand Box */
+.order-card {
+  background: rgba(0,45,32,0.4);
+  border: 1px solid rgba(0,255,160,0.2);
+  padding: 15px;
+  margin-top: 8px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+}
+
+.order-header strong,
+.order-card strong {
+  color: #b8ffe1;
+}
+
+.order-total {
+  margin-top: 6px;
+  font-weight: 700;
+  color: #caffea;
+}
+
+/* Modal */
+.mail-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #00000099;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail-box {
+  background: rgba(0,45,32,0.6);
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,255,160,0.18);
+  width: 420px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+}
+
+.mail-box input,
+.mail-box textarea {
+  background: rgba(0,45,32,0.35);
+  border: 1px solid rgba(0,255,160,0.15);
+  padding: 8px 10px;
+  width: 100%;
+  border-radius: 8px;
+  color: #d9ffe8;
+}
+
+.mail-actions {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.mail-actions button {
+  padding: 7px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: #d9ffe8;
+  margin-left: 8px;
+  transition: .25s;
+}
+
+.mail-actions button:last-child {
+  background: rgba(0,255,160,0.35);
+}
+
+.mail-actions button:last-child:hover {
+  background: rgba(0,255,160,0.55);
+}
+
+.mail-actions button:first-child {
+  background: rgba(255,80,80,0.3);
+}
+
+.mail-actions button:first-child:hover {
+  background: rgba(255,80,80,0.5);
+}
+
+.mail-popup {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  background: rgba(0,0,0,0.45);
+  z-index: 999;
+}
+
+.mail-card {
+  background: rgba(0,50,35,0.55);
+  padding: 24px;
+  width: 340px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,255,160,0.25);
+  color: #d9ffe8;
+}
+
+.mail-input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(0,45,32,0.45);
+  border: 1px solid #63e2a8;
+  color: #caffea;
+}
+
+.mail-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.mail-btn {
+  background: #3ad68b;
+  padding: 6px 12px;
+  border-radius: 6px;
+}

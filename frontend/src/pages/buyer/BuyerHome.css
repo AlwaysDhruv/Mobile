@@ -1,0 +1,249 @@
+/* ================================
+   MAIN PAGE
+================================ */
+.buyer-home {
+  padding: 25px;
+  color: #d9ffe8;
+}
+
+/* ================================
+   SEARCH BAR
+================================ */
+.search-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.search-box input,
+.search-box select {
+  padding: 12px;
+  width: 100%;
+  background: rgba(0, 60, 40, 0.35);
+  border: 1px solid rgba(0, 255, 160, 0.25);
+  color: #d9ffe8;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.search-box select {
+  width: 240px;
+}
+
+.search-box input:focus,
+.search-box select:focus {
+  outline: none;
+  border-color: #00ff99;
+}
+
+/* ================================
+   PRODUCT GRID
+================================ */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: rgba(0, 45, 35, 0.35);
+  border-radius: 14px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid rgba(0, 255, 160, 0.15);
+  transition: transform 0.25s, box-shadow 0.25s;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0,255,160,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.brand {
+  font-size: 14px;
+  color: #9effc9;
+}
+
+.price {
+  font-size: 18px;
+  margin-top: 6px;
+  color: #aaffdd;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #00ff99;
+  color: #003322;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #00e68a;
+}
+
+/* ================================
+   NO RESULTS
+================================ */
+.no-result {
+  color: #ffbdbd;
+  text-align: center;
+  grid-column: 1 / -1;
+  font-size: 18px;
+}
+
+/* ================================
+   MODAL BACKDROP
+================================ */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  z-index: 1000;
+}
+
+/* ================================
+   MODAL CONTENT
+================================ */
+.modal-content {
+  background: rgba(0, 45, 35, 0.85);
+  padding: 25px;
+  border-radius: 14px;
+  width: 450px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid rgba(0,255,160,0.25);
+  position: relative;
+  animation: pop 0.25s ease-out;
+}
+
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* ================================
+   MODAL IMAGES
+================================ */
+.modal-img-box {
+  text-align: center;
+}
+
+.modal-img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.thumb-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid rgba(0,255,160,0.3);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.thumb:hover {
+  transform: scale(1.1);
+}
+
+/* ================================
+   SPECIFICATIONS TABLE
+================================ */
+.spec-title {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #aaffdd;
+  text-align: left;
+}
+
+.spec-table {
+  width: 100%;
+  margin-top: 12px;
+  border-collapse: collapse;
+  background: rgba(0, 40, 30, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.spec-table td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0,255,160,0.1);
+  color: #d9ffe8;
+}
+
+.spec-table tr:last-child td {
+  border-bottom: none;
+}
+
+.spec-table td:first-child {
+  font-weight: bold;
+  width: 40%;
+  color: #9effc9;
+}
+
+/* ================================
+   SCROLL CUSTOMIZATION
+================================ */
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: rgba(0,255,160,0.35);
+  border-radius: 10px;
+}
+.store-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  background: #008b5e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.store-btn:hover {
+  background: #006644;
+}

@@ -1,0 +1,103 @@
+.mail-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 40, 30, 0.9);
+  padding: 25px;
+  border-radius: 14px;
+  color: #d9ffe8;
+  width: 420px;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  border: 1px solid rgba(0, 255, 160, 0.2);
+}
+
+.mail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: #ffb3b3;
+  cursor: pointer;
+}
+
+.search-area {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.search-area select,
+.search-area input {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #d9ffe8;
+}
+
+.search-results {
+  background: rgba(0, 255, 180, 0.1);
+  border-radius: 6px;
+  margin-top: 4px;
+  max-height: 150px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+}
+
+.search-results li {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.search-results li:hover {
+  background: rgba(0, 255, 160, 0.15);
+}
+
+.mail-box input,
+.mail-box textarea {
+  width: 100%;
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #d9ffe8;
+}
+
+.mail-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+.btn.send {
+  background: linear-gradient(135deg, #00ff88, #00cc88);
+  color: #003322;
+}
+
+.btn.cancel {
+  background: rgba(255, 255, 255, 0.1);
+  color: #d9ffe8;
+}

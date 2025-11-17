@@ -1,0 +1,137 @@
+/* CATEGORY LIST PAGE */
+
+.categories-page { color: #d9ffe8; }
+
+.top-bar { display: flex; justify-content: space-between; align-items: center; }
+
+.filters { margin: 18px 0; }
+.filters input {
+  padding: 10px; border-radius: 8px; border: 1px solid #067a52;
+  background: rgba(0,40,28,0.6); color: #d9ffe8;
+}
+
+.category-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 26px; margin-top: 20px;
+}
+
+.category-card {
+  background: rgba(0,40,28,0.55); border-radius: 14px; padding: 20px;
+  border: 1px solid rgba(0,255,160,0.18); box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+  transition: .35s ease; text-align: center;
+}
+
+.category-card:hover { transform: translateY(-6px); box-shadow: 0 18px 55px rgba(0,0,0,0.75); }
+
+.category-main { cursor: pointer; }
+.category-main h3 { margin: 0; font-size: 20px; color:#caffea; }
+.count { margin-top: 6px; color: #90dbbd; }
+
+.cat-actions { margin-top: 18px; display: flex; justify-content: center; gap: 10px; }
+
+.edit-btn,
+.del-btn {
+  padding: 9px 14px; border-radius: 8px; cursor: pointer;
+  border: none; font-size: 13px; transition: .25s;
+}
+
+.edit-btn { background: rgba(0,255,160,0.25); border: 1px solid rgba(0,255,160,0.4); color: #d9ffe8; }
+.edit-btn:hover { background: rgba(0,255,160,0.35); }
+
+.del-btn { background: rgba(255,80,80,0.25); border: 1px solid rgba(255,120,120,0.45); color: #ffbfbf; }
+.del-btn:hover { background: rgba(255,80,80,0.4); }
+
+/* ADD + EDIT CATEGORY FORM */
+
+.add-category, .edit-category { color: #d9ffe8; }
+
+.add-category form,
+.edit-category form {
+  max-width: 680px; margin: auto; background: rgba(0,40,28,0.45);
+  padding: 24px; border-radius: 14px; border: 1px solid rgba(0,255,160,0.18);
+  display: flex; flex-direction: column; gap: 12px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.5); backdrop-filter: blur(10px);
+}
+
+.add-category input,
+.edit-category input,
+.add-category textarea,
+.edit-category textarea {
+  padding: 12px; border-radius: 10px; background: rgba(0,40,28,0.6);
+  border: 1px solid #067a52; color: #d8ffe6;
+}
+
+.product-checkbox-list {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 8px; background: rgba(0,40,28,0.4);
+  padding: 12px; border-radius: 10px; border: 1px solid rgba(0,255,160,0.18);
+}
+
+.checkbox-item { display:flex; gap:8px; align-items:center; font-size:14px; }
+
+.btn {
+  padding: 12px; background: #00b562; color: #003315;
+  border-radius: 10px; font-weight: 700; cursor: pointer; border: none;
+}
+
+.checkbox-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,40,28,0.35);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.remove-btn {
+  background: rgba(255,80,80,0.25);
+  border: 1px solid rgba(255,100,100,0.55);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #ffbfbf;
+  font-size: 12px;
+  transition: .25s;
+}
+
+.remove-btn:hover {
+  background: rgba(255,80,80,0.45);
+}
+
+.product-list-box {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.product-name {
+  font-weight: 500;
+}
+
+.add-btn {
+  background: #2ecc71;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background: #e74c3c;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}

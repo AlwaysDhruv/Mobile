@@ -1,0 +1,86 @@
+.seller-store {
+  padding: 25px;
+  color: #d9ffe8;
+}
+
+.title {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.store-card {
+  background: rgba(0,45,35,0.4);
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,255,160,0.25);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.4);
+}
+
+label {
+  margin-top: 12px;
+  display: block;
+  color: #b6ffe2;
+}
+
+.input, .textarea, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(0,60,40,0.35);
+  border: 1px solid rgba(0,255,160,0.25);
+  color: #d9ffe8;
+  margin-top: 6px;
+}
+
+.textarea {
+  height: 90px;
+}
+
+.preview-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-top: 8px;
+  border-radius: 10px;
+}
+
+.preview-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  background: rgba(0,0,0,0.25);
+  margin-top: 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,255,160,0.2);
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row > div {
+  flex: 1;
+}
+
+.sub-title {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  color: #aaffd7;
+}
+
+.save-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #00ff99;
+  border: none;
+  color: #003322;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: #00e68a;
+}

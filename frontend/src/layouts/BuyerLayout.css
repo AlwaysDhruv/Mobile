@@ -1,0 +1,75 @@
+.buyer-panel {
+  width: 100%;
+  min-height: 100vh;
+  background: #001d14;
+  color: #d9ffe8;
+}
+
+/* NAVBAR */
+.buyer-nav {
+  background: rgba(0, 50, 35, 0.45);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 255, 160, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 28px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.buyer-nav-left {
+  font-size: 20px;
+  font-weight: bold;
+  color: #b8ffe1;
+}
+
+.buyer-nav-links {
+  display: flex;
+  gap: 18px;
+}
+
+.buyer-nav-links a {
+  color: #aaffdd;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.buyer-nav-links a.active,
+.buyer-nav-links a:hover {
+  color: #00ff99;
+  font-weight: bold;
+}
+
+.buyer-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.buyer-username {
+  color: #9edbb5;
+  font-size: 14px;
+}
+
+.buyer-logout-btn {
+  background: none;
+  color: #00ff99;
+  border: 1px solid #00ff99;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buyer-logout-btn:hover {
+  background: #00ff99;
+  color: #003322;
+}
+
+/* PAGE CONTENT */
+.buyer-content {
+  padding: 30px;
+}

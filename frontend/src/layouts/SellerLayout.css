@@ -1,0 +1,145 @@
+.seller-panel {
+  min-height: 100vh;
+  background: linear-gradient(145deg,#002a20,#003c2a,#002119);
+  background-size: 300% 300%;
+  animation: bgMove 12s infinite alternate;
+  color: #d9ffe8;
+  overflow-x: hidden;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
+
+/* ========================= NAV BAR ========================= */
+
+/* Hidden navigation bar */
+.seller-nav {
+  position: fixed;
+  top: -62px; /* fully hidden above */
+  left: 0;
+  width: 100%;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+
+  background: rgba(0,30,22,0.75);
+  border-bottom: 1px solid rgba(0,255,160,0.20);
+  backdrop-filter: blur(12px);
+
+  z-index: 999;
+  transition: top 0.4s ease;
+}
+
+/* Slide down when user hovers anywhere on seller panel */
+.seller-panel:hover .seller-nav {
+  top: 0;
+}
+
+/* ========================= NAV CONTENT ========================= */
+
+.nav-left {
+  font-size: 18px;
+  font-weight: 700;
+  color: #caffea;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #d9ffe8;
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+/* Hover or active effect (Neon Glass Highlight) */
+.nav-links a:hover,
+.nav-links a.active {
+  background: rgba(0,255,160,0.18);
+  border: 1px solid rgba(0,255,160,0.35);
+}
+
+.nav-right .logout-btn {
+  background: #ff6b6b;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: #061a11;
+  font-weight: 700;
+  transition: .25s;
+}
+
+.nav-right .logout-btn:hover {
+  filter: brightness(1.2);
+}
+
+/* ========================= CONTENT AUTO ADJUST ========================= */
+
+/* Normal state (nav hidden) */
+.seller-content {
+  margin-top: 20px;
+  padding: 30px;
+  transition: margin-top 0.4s ease;
+}
+
+/* When nav is visible — move content down smoothly */
+.seller-panel:hover .seller-content {
+  margin-top: 90px;
+}
+/* Hidden navigation bar */
+.seller-nav {
+  position: fixed;
+  top: -62px; /* fully hidden above */
+  left: 0;
+  width: 100%;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+
+  background: rgba(0,30,22,0.75);
+  border-bottom: 1px solid rgba(0,255,160,0.20);
+  backdrop-filter: blur(12px);
+
+  z-index: 999;
+  transition: top 0.4s ease;
+}
+
+/* Hover Trigger Bar (new) */
+.nav-hover-zone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  z-index: 998;
+}
+
+/* Reveal nav only when hovering top or nav itself */
+.nav-hover-zone:hover + .seller-nav,
+.seller-nav:hover {
+  top: 0;
+}
+
+/* Auto adjust content when nav open */
+.seller-content {
+  margin-top: 20px;
+  padding: 30px;
+  transition: margin-top 0.4s ease;
+}
+
+.nav-hover-zone:hover ~ .seller-content,
+.seller-nav:hover ~ .seller-content {
+  margin-top: 90px;
+}
